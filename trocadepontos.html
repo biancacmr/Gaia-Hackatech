@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="troca.css">
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <script src="troca.js"></script>
+    
+    <title>Gaia | Troca de pontos</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <a href="index.html"><img id="logo" src="media/logo2.png" alt="Logo Gaia Upcycling" width="130vh"></a>
+            <a class="a-header" href="index.html">Home</a>
+            <a class="a-header" href="login.html">Entrar</a>
+            <a class="a-header" href="formulario.html">Doação</a>
+            <a class="a-header" id="active" href="trocadepontos.html">Troca de Pontos</a>
+            <a class="a-header" href="sobre.html">Sobre</a>
+            <a class="a-header" href="perfil.html">Perfil</a>
+        </header>
+        <main> 
+            <div id="main-top">
+                <div>
+                    <h1>Troca de pontos</h1>
+                    <p>Use seus pontos ganhos ao doar materiais para ganhar cupons de desconto em nossas empresas parceiras. Para ganhar mais pontos, basta continuar doando!</p>
+                </div>
+                <div class="pontos">  
+                    <h2>Pontos disponíveis</h2>
+                    <input min = "0"  readonly type = "number" value = 100 id="pontos">
+                    </input>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            10% de desconto
+                        </div>
+                        <div>
+                            <button id = "20" onclick="desconto(this.id)">20 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            15% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)" id = "40">40 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            10% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)" id = "10">10 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            20% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)"  id = "50">50 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            10% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)"  id = "15">15 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            10% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)"  id = "20">20 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            10% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)"  id = "10">10 pontos</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="media/trocadepontos.png" alt="" class="foto-card"></div>
+                    <div>
+                        <div class="empresa">
+                            Nome da empresa
+                        </div>
+                        <div class="desconto">
+                            5% de desconto
+                        </div>
+                        <div>
+                            <button onclick="desconto(this.id)" id = "10">10 pontos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a class="a-footer" href="index.html">Home</a>
+            <a class="a-footer" href="login.html">Entrar</a>
+            <a class="a-footer" href="formulario.html">Doação</a>
+            <a class="a-footer" id="active" href="trocadepontos.html">Troca de pontos</a>
+            <a class="a-footer" href="sobre.html">Sobre</a>
+            <a class="a-footer" href="perfil.html">Perfil</a>
+            <a href="#topo" class="a-footer">Voltar ao topo</a>
+            <br>
+            <img src="media/logo.png" alt="Logo Gaia" width="160vh" id="logo-footer">
+        </footer>
+    </div>
+
+</body>
+</html>

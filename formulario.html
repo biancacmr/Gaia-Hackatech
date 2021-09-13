@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulário.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <title>Gaia | Formulário</title>
+</head>
+<body>
+    <div id = "container">
+        <main>
+            <header>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="icone-voltar"xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-arrow-left-circle" width="30" height="30" viewBox="0 0 30 30">
+                        <path d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z"/>
+                    </svg>
+                </a>
+                <h1>Formulário de doação:</h1>
+                <p id="explicacao">Para dar continuidade ao processo de doação de materiais a empresas parceiras da Gaia, preencha o formulário a seguir. Serão coletadas informações para a criação de uma etiqueta dos correios, que ficará disponível na tela "Perfil" do nosso site logo após o preenchimento do formulário. Depois disso, basta imprimir a etiqueta, colar em uma caixa e levá-la para a agência do Correios mais próxima!</p>
+            </header>
+            <content>
+                <form action="checa-form.php" method="POST">
+                    <label id="questions">Que tipo de material você pretende doar?</label>
+                    <p id="descricao">*Se deseja doar mais de um tipo de material, você deverá preencher um formulário para cada tipo de material.
+                    </p>
+                    <span>
+                        <input type="radio" id="opçao1" name="material" value="HTML">
+                        <label for="opçao1">Lixo eletrônico</label><br>
+                    </span>
+                    <span>
+                        <input type="radio" id="opcao2" name="material" value="opcao2">
+                        <label for="opcao2">Tecidos para upcycling (lona, tecido de guarda chuva ou colchão inflável)</label><br>
+                    </span>
+                    <span>
+                        <input type="radio" id="opcao3" name="material" value="opcao3">
+                        <label for="opcao3">Tecidos de roupa (jeans ou malha)</label><br>
+                    </span>
+                    <span>
+                        <input type="radio" id="opcao3" name="material" value="opcao3">
+                        <label for="opcao3">Latas de aço, alumínio e similares</label><br>
+                    </span>
+                    <span>
+                        <input type="radio" id="opcao3" name="material" value="opcao3">
+                        <label for="opcao3">Câmara de pneu</label><br>
+                    </span>
+                    
+                    <br><br>
+                    <label id="questions">Quantos quilos (ou unidades) pretende doar?</label>
+                    <input id="text" type="text"><br><br>
+                        <span>
+                            <input type="radio" id="opçao1" name="unit" value="gramas">
+                            <label for="gramas">Gramas</label>
+                        <span>
+                            <input type="radio" id="opçao1" name="unit" value="quilos">
+                            <label for="quilos">Quilos</label>
+                        </span>
+                        <span>
+                            <input type="radio" id="opçao1" name="unit" value="unidades">
+                            <label for="unidades">Unidades</label>
+                        </span>
+                        <br><br><br>
+                    <label id="questions">Digite seu CPF:</label>
+                    <br><br>
+                    <input id="text" type="text">
+                    <br><br><br>
+                    <label id="questions">Digite sua cidade:</label>
+                    <br><br>
+                    <input id="text"  type="text">
+                    <br><br><br>
+                    <label id="questions">Digite seu estado:</label>
+                    <br><br>
+                    <input id="text"  type="text">
+                    <br><br><br>
+                    <label id="questions">Digite seu CEP:</label>
+                    <br><br>
+                    <input id="text"  type="text">
+                    <br><br><br>
+                    <label id="questions">Digite seu endereço:</label>
+                    <br><br>
+                    <input id="text"  type="text">
+                    <br><br><br><br><br>
+                    <input id="limpar" type="reset" value="Limpar">
+                    <input id="enviar" type="submit" value="Enviar">
+                </form>
+            </content>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #FFF8FB;
+    overflow: hidden;
+}
+
+.container{
+    grid-template-rows: 90vh 10vh;
+    grid-area: "b w";
+}
+
+#box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    height: 520px;
+    grid-template-columns: 300px 500px;
+    grid-area: b;
+}
+
+main{
+    position: relative;
+    background-color:white;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside{
+    background-color: rgba(171, 238, 151, 1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+    font-family: Secular One;
+    color: white;
+    font-size: 24px;
+}
+
+#form{
+    position: relative;
+    top: 5%;
+}
+
+#chamada{
+    text-align: center;
+    font-family: Secular One;
+    color: white;
+    position: relative;
+    top: 25px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#waves{
+    position: relative;
+    top: 55vh;
+    z-index: -1;
+    grid-area: w;
+}
+
+#cadastro-foto{
+    height: 150px;
+}
+
+.form{
+    position: relative;
+    left: 20%;
+    box-sizing: border-box;
+    padding: 10px 190px 10px 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    display:block;
+
+    margin-left: -40px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+#btn{
+    position: relative;
+    background: rgba(171, 238, 151, 1);
+    padding: 5px 80px 5px 80px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    left: 28%;
+    transition: 200ms ease-in-out;
+
+    font-family: Secular One;
+    color: white;
+    font-size: 18px;
+}
+
+#btn:hover{
+    background: rgb(113, 206, 84);
+}
+
+#cadastro:link, #cadastro:visited{
+    position: relative;
+    left: 175px;
+    top: 5px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.25);
+    font-family: Secular One;
+    font-size: 16px;
+    font-weight: 100;
+
+    transition: 200ms ease-in-out;
+}
+
+#cadastro:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.label{
+    position: relative;
+    margin-left: 90px;
+    font-family: Secular One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+#icone-voltar{
+    position: relative;
+    top: 5%;
+    left: 90%;
+    width: 30px;
+    fill: rgba(171, 238, 151, 1);
+    transition: 200ms ease-in-out;
+}
+
+#icone-voltar:hover{
+    fill: rgb(113, 206, 84);
+}

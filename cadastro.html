@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro-style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <title>Gaia | Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div id = "box">
+            <aside>
+                <br>
+                <h1>Cadastro</h1>
+                <img id = "cadastro-foto" src="media/cadastro.png" alt="Um homem usando um computador">
+                <p id="chamada">Venha transformar o mundo com a gente!</p>
+            </aside>
+            <main>
+                <div id="form">
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="icone-voltar"xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-arrow-left-circle" width="30" height="30" viewBox="0 0 30 30">
+                            <path d="M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M18,11H10L13.5,7.5L12.08,6.08L6.16,12L12.08,17.92L13.5,16.5L10,13H18V11Z"/>
+                        </svg>
+                    </a>
+                    <form action="checar-cadastro.php" method="POST">
+                        <label class="label">Nome *
+                            <input type="text" name="nome" class="form">
+                        </label>
+                        <label class="label">Telefone *
+                            <input type="tel" name="nome" class="form">
+                        </label>
+                        <label class="label">Email *
+                            <input type="email" name="email" class="form">
+                        </label>
+                        <label class="label">Senha *
+                            <input type="password" name="senha" class="form">
+                        </label>
+                        <label class="label">Confirmar senha *
+                            <input type="password" name="senha" class="form">
+                        </label>
+                        <input type="submit" value="Enviar" id="btn">
+                    </form>
+                    <a href="login.html" id="cadastro">Já possuo uma conta</a>
+                </div>
+            </main>
+            </div>
+        </div>
+        <!--Ondinha :D-->
+        <div id="waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ABEE97" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,250.7C640,235,800,181,960,170.7C1120,160,1280,192,1360,208L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        </div>
+    </div>
+</body>
+</html>
